@@ -36,7 +36,8 @@
 	
 	<beans:bean id="userService" class="com.tss.user.service.impl.UserServiceImpl"></beans:bean>
 	<beans:bean id="userDAO" class="com.tss.user.dao.impl.UserDAOImpl"></beans:bean>
-	
+	<beans:bean id="employeeService" class="com.tss.user.service.impl.EmployeeServiceImpl"></beans:bean>
+	<beans:bean id="employeeDAO" class="com.tss.user.dao.impl.EmployeeDAOImpl"></beans:bean>
 	<beans:bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
 		<beans:constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 		<beans:property name="writeConcern" value="SAFE" />

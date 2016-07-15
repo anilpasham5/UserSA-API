@@ -86,4 +86,9 @@ public class UserController {
 		logger.info(userEmailId);
 		return userService.getUser(userEmailId);
 	}
+	@RequestMapping(value="",method=RequestMethod.PUT)
+	public String updateUser(@RequestBody UserPojo userPojo){
+		logger.info(userPojo.toString());
+		return "Updated ";
+	}
 }
