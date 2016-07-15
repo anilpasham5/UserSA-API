@@ -24,8 +24,8 @@
       Enter EmailID or Mobile Number:
    </td>
   <td>
-    <input type="text" name="email" ng-model="email" ng-pattern="/^([A-z0-9]{4,25})@([A-z0-9]{4,25}).com$/" class="well well-sm" required>
-    <span ng-show="myForm.email.$error.pattern" style="color:red">EmailID must be in xxxx@yyyy.com format only</span>
+    <input type="text" name="email" ng-model="email" ng-pattern="/^[A-z0-9!@#$*.]{10,35}$/" class="well well-sm" required>
+    <span ng-show="myForm.email.$error.pattern" style="color:red">Invalid EmailId or Mobile Number</span>
   </td>
 </tr>
 

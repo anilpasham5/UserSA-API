@@ -14,7 +14,9 @@
 	<logger name="com.tss.user">
 		<level value="info" />
 	</logger>
-	
+	<logger name="com.tss.user.controller">
+	     <level value="info"></level>
+	</logger>
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
